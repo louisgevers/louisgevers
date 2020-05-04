@@ -25,3 +25,12 @@ export const BigButton = styled.button`
     color: #84a98c;
   }
 `
+
+export const TextParagraph = styled.div`
+  p:first-of-type:before {
+    content: "“";
+  }
+  p:last-of-type:after {
+    content: "”";
+  }
+`
