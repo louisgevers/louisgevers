@@ -1,5 +1,7 @@
 import React from "react"
 
-const Home = () => <section></section>
+import FullBackgroundImageSection from "../full-background-image-section"
+
+const Home = () => <FullBackgroundImageSection></FullBackgroundImageSection>
 
 export default Home
