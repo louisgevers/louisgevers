@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const avatarImageStyle = {
   borderRadius: `50%`,
   border: `6px solid white`,
-  float: `center`,
+  margin: `auto`,
 }
 
 const MugShot = () => {
@@ -14,7 +14,7 @@ const MugShot = () => {
     query {
       file(relativePath: { eq: "mugshot.jpg" }) {
         childImageSharp {
-          fixed(width: 200, height: 200) {
+          fixed(quality: 100, width: 200, height: 200) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }
