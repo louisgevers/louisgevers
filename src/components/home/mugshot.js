@@ -46,7 +46,7 @@ const MugShot = () => {
 
   return (
     <Avatar>
-      <Img fixed={data.file.childImageSharp.fluid} style={avatarImageStyle} />
+      <Img fluid={data.file.childImageSharp.fluid} style={avatarImageStyle} />
     </Avatar>
   )
 }

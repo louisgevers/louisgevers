@@ -2,9 +2,27 @@ import React from "react"
 import styled from "styled-components"
 import { TextParagraph } from "../shared-styled-components"
 
+const StyledSection = styled.section`
+  color: white;
+  text-align: center;
+  background: #84a98c;
+  padding: 40px 10px;
+  hr {
+    width: 80%;
+  }
+`
+
+const StyledHeader = styled.h2`
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+`
+
 const About = () => (
-  <section>
-    <h2>About me</h2>
+  <StyledSection>
+    <StyledHeader>About me</StyledHeader>
+    <hr />
     <TextParagraph>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat
@@ -29,7 +47,7 @@ const About = () => (
       <li>Dutch (schooled up until university in dutch, daily use)</li>
       <li>English (academic level, daily use)</li>
     </ul>
-  </section>
+  </StyledSection>
 )
 
 export default About
