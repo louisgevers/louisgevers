@@ -14,6 +14,7 @@ export const BigButton = styled.button`
   color: white;
   letter-spacing: 0.2em;
   font-size: 18px;
+  font-weight: 300;
   text-transform: uppercase;
   cursor: pointer;
   :hover {
