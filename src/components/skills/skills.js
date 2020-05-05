@@ -1,9 +1,14 @@
 import React from "react"
+import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 
 import ColoredSection from "../colored-section"
 import { StyledHeader } from "../shared-styled-components"
 import Interests from "./interests"
+
+const CenteredStyledHeader = styled(StyledHeader)`
+  text-align: center;
+`
 
 const Skills = () => {
   const data = useStaticQuery(graphql`
@@ -20,9 +25,9 @@ const Skills = () => {
   `)
   return (
     <ColoredSection title="Skills" backgroundColor="#216869" color="#ffffff">
-      <StyledHeader>My areas of interest</StyledHeader>
+      <CenteredStyledHeader>My areas of interest</CenteredStyledHeader>
       <Interests items={data.interests.nodes} />
-      <StyledHeader>Tools I use</StyledHeader>
+      <CenteredStyledHeader>Tools I use</CenteredStyledHeader>
     </ColoredSection>
   )
 }

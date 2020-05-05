@@ -13,6 +13,12 @@ const StyledEntryTitle = styled.h4`
   font-weight: 400;
   margin: 0;
   margin-top: 0.5em;
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 28px;
+  }
 `
 
 const StyledIcon = styled.span`
@@ -37,6 +43,14 @@ const IconContainer = styled.div`
   transform: translate(-50%, -50%) rotate(-45deg);
 `
 
+const ResponsiveGridList = styled(UnstyledUnorderedList)`
+  @media (min-width: 768px) {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: ${props => `repeat(${props.size}, 1fr)`};
+  }
+`
+
 const InterestIcon = ({ iconName, color }) => (
   <IconBorder>
     <IconContainer>
@@ -54,7 +68,7 @@ const InterestEntry = ({ iconName, title, description, color }) => (
 )
 
 const Interests = ({ items }) => (
-  <UnstyledUnorderedList>
+  <ResponsiveGridList size={items.length}>
     {items.map(item => (
       <InterestEntry
         iconName={item.materialIconName}
@@ -63,7 +77,7 @@ const Interests = ({ items }) => (
         color={item.color}
       />
     ))}
-  </UnstyledUnorderedList>
+  </ResponsiveGridList>
 )
 
 export default Interests
