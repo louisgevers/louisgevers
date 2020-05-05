@@ -3,6 +3,13 @@ import styled from "styled-components"
 
 import { UnstyledUnorderedList } from "../shared-styled-components"
 
+const StyledToolList = styled(UnstyledUnorderedList)`
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(${props => props.size}, 1fr);
+  }
+`
+
 const StyledEntriesList = styled(UnstyledUnorderedList)`
   margin: auto;
   width: max-content;
@@ -34,7 +41,7 @@ const ToolEntry = ({ name, icon }) => {
 }
 
 const Tools = ({ items }) => (
-  <UnstyledUnorderedList>
+  <StyledToolList size={items.length}>
     {items.map(item => (
       <li key={item.title}>
         <StyledToolTitle>{item.title}</StyledToolTitle>
@@ -49,7 +56,7 @@ const Tools = ({ items }) => (
         </StyledEntriesList>
       </li>
     ))}
-  </UnstyledUnorderedList>
+  </StyledToolList>
 )
 
 export default Tools
