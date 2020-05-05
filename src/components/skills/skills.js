@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import ColoredSection from "../colored-section"
 import { StyledHeader } from "../shared-styled-components"
 import Interests from "./interests"
+import Tools from "./tools"
 
 const CenteredStyledHeader = styled(StyledHeader)`
   text-align: center;
@@ -21,6 +22,15 @@ const Skills = () => {
           color
         }
       }
+      tools: allToolsJson {
+        nodes {
+          title
+          items {
+            name
+            icon
+          }
+        }
+      }
     }
   `)
   return (
@@ -28,6 +38,7 @@ const Skills = () => {
       <CenteredStyledHeader>My areas of interest</CenteredStyledHeader>
       <Interests items={data.interests.nodes} />
       <CenteredStyledHeader>Tools I use</CenteredStyledHeader>
+      <Tools items={data.tools.nodes} />
     </ColoredSection>
   )
 }

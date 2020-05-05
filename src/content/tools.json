@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Programming",
+    "items": [
+      { "name": "Java", "icon": "java.svg" },
+      { "name": "Python", "icon": "python.svg" }
+    ]
+  },
+  {
+    "title": "Web",
+    "items": [
+      { "name": "JavaScript", "icon": "javascript.svg" },
+      { "name": "Node.js", "icon": "nodejs.svg" }
+    ]
+  },
+  {
+    "title": "Graphics",
+    "items": [{ "name": "Adobe Photoshop", "icon": "photoshop.svg" }]
+  }
+]
