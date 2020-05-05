@@ -42,7 +42,7 @@ const Resume = () => {
     }
   `)
   return (
-    <ColoredSection title="resume" backgroundColor="#52796f" color="#ffffff">
+    <ColoredSection title="resume" backgroundColor="#84a98c" color="#ffffff">
       <ResumeSection title="Education" items={data.education.nodes} />
       <ResumeSection title="Experience" items={data.experience.nodes} />
     </ColoredSection>

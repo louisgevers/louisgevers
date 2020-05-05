@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 
 const StyledHeader = styled.h3`
-  color: #cad2c5;
+  /* color: #cad2c5; */
   text-align: start;
   font-weight: 300;
   font-size: 24px;
@@ -12,19 +12,37 @@ const StyledHeader = styled.h3`
   margin-top: 1em;
 `
 
-const StyledEntryGrid = styled.div`
+const ResumeEntriesList = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`
+
+const StyledEntryGrid = styled.li`
   display: flex;
   flex-direction: column;
   text-align: start;
   color: black;
   margin-top: 20px;
   margin-bottom: 40px;
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 100px 1fr 30%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "icon title location"
+      "icon institution period"
+      "icon description .";
+  }
 `
 const EntryTitle = styled.h4`
   grid-area: title;
   font-size: 16px;
   font-weight: 700;
   margin: 0;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 `
 
 const EntryInstitution = styled.h5`
@@ -32,22 +50,40 @@ const EntryInstitution = styled.h5`
   margin: 0;
   font-size: 16px;
   font-weight: 600;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1024px) {
+    font-weight: 400;
+  }
 `
 
 const EntryDescription = styled.p`
   grid-area: description;
   display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
 `
 
 const EntryLocation = styled.span`
   grid-area: location;
   font-size: 14px;
   font-weight: 600;
-  color: #84a98c;
+  color: #216869;
   .material-icons {
     font-family: "Material Icons";
     font-size: 14px;
     margin-right: 0.1em;
+  }
+  @media (min-width: 768px) {
+    font-size: 18px;
+    .material-icons {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 1024px) {
+    text-align: end;
   }
 `
 
@@ -57,11 +93,21 @@ const EntryPeriod = styled.span`
   margin-bottom: 1em;
   font-weight: 300;
   font-size: 14px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1024px) {
+    text-align: end;
+  }
 `
 
-const EntryIcon = styled(Img)`
+const EntryIcon = styled.div`
   grid-area: icon;
   display: none;
+  @media (min-width: 1024px) {
+    display: block;
+    padding: 1em;
+  }
 `
 
 const ResumeEntry = ({
@@ -73,7 +119,9 @@ const ResumeEntry = ({
   iconFluid,
 }) => (
   <StyledEntryGrid>
-    <EntryIcon fluid={iconFluid} />
+    <EntryIcon>
+      <Img fluid={iconFluid} />
+    </EntryIcon>
     <EntryTitle>{title}</EntryTitle>
     <EntryPeriod>{period}</EntryPeriod>
     <EntryInstitution>{institution}</EntryInstitution>
@@ -88,17 +136,19 @@ const ResumeEntry = ({
 const ResumeSection = ({ title, items }) => (
   <div>
     <StyledHeader>{title}</StyledHeader>
-    {items.map(item => (
-      <ResumeEntry
-        key={item.title}
-        title={item.title}
-        institution={item.institution}
-        description={item.description}
-        location={item.location}
-        period={item.period}
-        iconFluid={item.icon.childImageSharp.fluid}
-      />
-    ))}
+    <ResumeEntriesList>
+      {items.map(item => (
+        <ResumeEntry
+          key={item.title}
+          title={item.title}
+          institution={item.institution}
+          description={item.description}
+          location={item.location}
+          period={item.period}
+          iconFluid={item.icon.childImageSharp.fluid}
+        />
+      ))}
+    </ResumeEntriesList>
   </div>
 )
 
