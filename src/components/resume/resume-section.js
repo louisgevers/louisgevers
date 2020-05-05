@@ -2,13 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 import Img from "gatsby-image"
-import { StyledHeader } from "../shared-styled-components"
-
-const ResumeEntriesList = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-`
+import {
+  StyledHeader,
+  UnstyledUnorderedList,
+} from "../shared-styled-components"
 
 const StyledEntryGrid = styled.li`
   display: flex;
@@ -128,7 +125,7 @@ const ResumeEntry = ({
 const ResumeSection = ({ title, items }) => (
   <div>
     <StyledHeader>{title}</StyledHeader>
-    <ResumeEntriesList>
+    <UnstyledUnorderedList>
       {items.map(item => (
         <ResumeEntry
           key={item.title}
@@ -140,7 +137,7 @@ const ResumeSection = ({ title, items }) => (
           iconFluid={item.icon.childImageSharp.fluid}
         />
       ))}
-    </ResumeEntriesList>
+    </UnstyledUnorderedList>
   </div>
 )
 

@@ -60,3 +60,9 @@ export const StyledHeader = styled.h3`
   margin: 0;
   margin-top: 1em;
 `
+
+export const UnstyledUnorderedList = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`
