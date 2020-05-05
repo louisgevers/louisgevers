@@ -52,3 +52,11 @@ export const TextParagraph = styled.div`
     padding: 1em;
   }
 `
+
+export const StyledHeader = styled.h3`
+  text-align: start;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 1em;
+`

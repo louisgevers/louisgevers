@@ -2,15 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Img from "gatsby-image"
-
-const StyledHeader = styled.h3`
-  /* color: #cad2c5; */
-  text-align: start;
-  font-weight: 300;
-  font-size: 24px;
-  margin: 0;
-  margin-top: 1em;
-`
+import { StyledHeader } from "../shared-styled-components"
 
 const ResumeEntriesList = styled.ul`
   list-style-type: none;
