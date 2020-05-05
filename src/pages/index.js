@@ -6,6 +6,7 @@ import About from "../components/about/about"
 import Resume from "../components/resume/resume"
 import Skills from "../components/skills/skills"
 import SectionBreak from "../components/section-break"
+import Contact from "../components/contact/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Resume />
     <Skills />
     <SectionBreak />
+    <Contact />
   </Layout>
 )
 
