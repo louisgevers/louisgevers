@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+
 import ColoredSection from "../colored-section"
 import { useStaticQuery, graphql } from "gatsby"
 import ResumeSection from "./resume-section"
@@ -41,7 +41,6 @@ const Resume = () => {
       }
     }
   `)
-  console.log(data)
   return (
     <ColoredSection title="resume" backgroundColor="#52796f" color="#ffffff">
       <ResumeSection title="Education" items={data.education.nodes} />
