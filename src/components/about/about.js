@@ -14,6 +14,17 @@ const StyledSection = styled.section`
   }
 `
 
+const StyledContentWrapper = styled.div`
+  margin: 0 auto;
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1280px) {
+    width: 50%;
+  }
+`
+
 const StyledHeader = styled.h2`
   margin: 0;
   text-transform: uppercase;
@@ -23,19 +34,22 @@ const StyledHeader = styled.h2`
 
 const About = () => (
   <StyledSection>
-    <StyledHeader>About me</StyledHeader>
-    <hr />
-    <TextParagraph>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat
-        velit dignissim sapien pulvinar, mollis molestie massa varius. Donec nec
-        sapien neque. Donec sagittis lacus in lorem tristique, in mattis sem
-        eleifend. Duis mauris nisi, volutpat non lacus vel, vestibulum commodo
-        nisi. Nullam vel elit convallis, viverra lacus non, scelerisque enim.
-        Mauris sit amet tristique arcu. Ut ut accumsan dolor.
-      </p>
-    </TextParagraph>
-    <FlagIcons />
+    <StyledContentWrapper>
+      <StyledHeader>About me</StyledHeader>
+      <hr />
+      <TextParagraph>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat
+          velit dignissim sapien pulvinar, mollis molestie massa varius. Donec
+          nec sapien neque. Donec sagittis lacus in lorem tristique, in mattis
+          sem eleifend. Duis mauris nisi, volutpat non lacus vel, vestibulum
+          commodo nisi. Nullam vel elit convallis, viverra lacus non,
+          scelerisque enim. Mauris sit amet tristique arcu. Ut ut accumsan
+          dolor.
+        </p>
+      </TextParagraph>
+      <FlagIcons />
+    </StyledContentWrapper>
   </StyledSection>
 )
 
