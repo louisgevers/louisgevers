@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
-  color: white;
+  color: ${props => props.color};
   text-align: center;
-  background: ${props => props.color};
+  background: ${props => props.backgroundColor};
   padding: 40px 20px;
   hr {
     width: 80%;
@@ -29,8 +29,8 @@ const StyledHeader = styled.h2`
   font-weight: 400;
 `
 
-const ColoredSection = ({ children, title, color }) => (
-  <StyledSection color={color}>
+const ColoredSection = ({ children, title, backgroundColor, color }) => (
+  <StyledSection backgroundColor={backgroundColor} color={color}>
     <StyledContentWrapper>
       <StyledHeader>{title}</StyledHeader>
       <hr></hr>

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Computer Vision Research Project",
+    "institution": "AIIR Innovations",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "location": "Amsterdam, Netherlands",
+    "period": "Nov. 2018 - Exp. Jul. 2020",
+    "icon": "exp-aiir.png"
+  },
+  {
+    "title": "Solvay Business Game (selected)",
+    "institution": "Solvay Brussels School of Economics & Management",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "location": "Brussels, Belgium",
+    "period": "Mar. 2020",
+    "icon": "exp-sbg.jpg"
+  }
+]

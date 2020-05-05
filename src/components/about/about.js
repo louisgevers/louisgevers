@@ -5,7 +5,7 @@ import FlagIcons from "./flag-icons"
 import ColoredSection from "../colored-section"
 
 const About = () => (
-  <ColoredSection title="about me" color="#84a98c">
+  <ColoredSection title="about me" backgroundColor="#84a98c" color="#ffffff">
     <TextParagraph>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat
