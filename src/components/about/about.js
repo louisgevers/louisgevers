@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+
 import { TextParagraph } from "../shared-styled-components"
+import FlagIcons from "./flag-icons"
 
 const StyledSection = styled.section`
   color: white;
@@ -42,11 +44,7 @@ const About = () => (
       </p>
     </TextParagraph>
     <p>I am fluent in the following languages:</p>
-    <ul>
-      <li>French (mother tongue)</li>
-      <li>Dutch (schooled up until university in dutch, daily use)</li>
-      <li>English (academic level, daily use)</li>
-    </ul>
+    <FlagIcons />
   </StyledSection>
 )
 
