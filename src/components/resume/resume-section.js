@@ -61,6 +61,10 @@ const EntryLocation = styled.span`
   font-weight: 600;
   color: #216869;
   .material-icons {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     font-family: "Material Icons";
     font-size: 14px;
     margin-right: 0.1em;

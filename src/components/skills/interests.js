@@ -22,6 +22,10 @@ const StyledEntryTitle = styled.h4`
 `
 
 const StyledIcon = styled.span`
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-family: "Material Icons";
   font-size: 50px;
   color: ${props => props.color};
