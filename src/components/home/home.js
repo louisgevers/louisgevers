@@ -1,5 +1,7 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import styled from "styled-components"
+import { MdKeyboardArrowDown } from "react-icons/md"
 
 import FullBackgroundImageSection from "../full-background-image-section"
 import MugShot from "./mugshot"
@@ -47,17 +49,59 @@ const DownloadButton = styled(BigButton)`
   margin: 40px 0;
 `
 
+const ExploreLink = styled(AnchorLink)`
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  padding-bottom: 60px;
+  text-decoration: none;
+  :hover {
+    * {
+      animation: none;
+    }
+  }
+  width: 100%;
+`
+
+const ArrowIcon = styled(MdKeyboardArrowDown)`
+  position: absolute;
+  font-size: 60px;
+  bottom: 5px;
+  animation: MoveUpDown 1s linear infinite;
+
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      bottom: 5px;
+    }
+    50% {
+      bottom: -5px;
+    }
+  }
+`
+
 const Home = () => (
-  <FullBackgroundImageSection>
-    <Grid>
-      <MugShot />
-      <SiteTitle>
-        Louis <b>Gevers</b>
-      </SiteTitle>
-      <Description>Computer Science Student</Description>
-      <DownloadButton>download my cv</DownloadButton>
-    </Grid>
-  </FullBackgroundImageSection>
+  <div id="home">
+    <FullBackgroundImageSection>
+      <Grid>
+        <MugShot />
+        <SiteTitle>
+          Louis <b>Gevers</b>
+        </SiteTitle>
+        <Description>Computer Science Student</Description>
+        <DownloadButton>download my cv</DownloadButton>
+      </Grid>
+      <ExploreLink to="/#about" title="About">
+        <span>or take a look</span>
+        <ArrowIcon />
+      </ExploreLink>
+    </FullBackgroundImageSection>
+  </div>
 )
 
 export default Home

@@ -42,10 +42,12 @@ const Resume = () => {
     }
   `)
   return (
-    <ColoredSection title="resume" backgroundColor="#84a98c" color="#ffffff">
-      <ResumeSection title="Education" items={data.education.nodes} />
-      <ResumeSection title="Experience" items={data.experience.nodes} />
-    </ColoredSection>
+    <div id="resume">
+      <ColoredSection title="resume" backgroundColor="#84a98c" color="#ffffff">
+        <ResumeSection title="Education" items={data.education.nodes} />
+        <ResumeSection title="Experience" items={data.experience.nodes} />
+      </ColoredSection>
+    </div>
   )
 }
 

@@ -35,12 +35,14 @@ const Skills = () => {
     }
   `)
   return (
-    <ColoredSection title="Skills" backgroundColor="#216869" color="#ffffff">
-      <CenteredStyledHeader>My areas of interest</CenteredStyledHeader>
-      <Interests items={data.interests.nodes} />
-      <CenteredStyledHeader>Tools I use</CenteredStyledHeader>
-      <Tools items={data.tools.nodes} />
-    </ColoredSection>
+    <div id="skills">
+      <ColoredSection title="Skills" backgroundColor="#216869" color="#ffffff">
+        <CenteredStyledHeader>My areas of interest</CenteredStyledHeader>
+        <Interests items={data.interests.nodes} />
+        <CenteredStyledHeader>Tools I use</CenteredStyledHeader>
+        <Tools items={data.tools.nodes} />
+      </ColoredSection>
+    </div>
   )
 }
 

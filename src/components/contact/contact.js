@@ -36,40 +36,42 @@ const StyledIcon = styled.i`
 `
 
 const Contact = () => (
-  <ColoredSection title="Contact" backgroundColor="#1f2421" color="#ffffff">
-    <StyledContactList>
-      <ContactItem>
-        <StyledIcon>
-          <MdEmail />
-        </StyledIcon>
-        <StyledContactLink href="mailto:louis.gevers@gmail.com">
-          louis.gevers@gmail.com
-        </StyledContactLink>
-      </ContactItem>
-      <ContactItem>
-        <StyledIcon>
-          <GrLinkedin />
-        </StyledIcon>
-        <StyledContactLink
-          href="https://www.linkedin.com/in/louisgevers"
-          target="_blank"
-        >
-          www.linkedin.com/in/louisgevers
-        </StyledContactLink>
-      </ContactItem>
-      <ContactItem>
-        <StyledIcon>
-          <GoMarkGithub />
-        </StyledIcon>
-        <StyledContactLink
-          href="https://www.github.com/louisgevers"
-          target="_blank"
-        >
-          www.github.com/louisgevers
-        </StyledContactLink>
-      </ContactItem>
-    </StyledContactList>
-  </ColoredSection>
+  <div id="contact">
+    <ColoredSection title="Contact" backgroundColor="#1f2421" color="#ffffff">
+      <StyledContactList>
+        <ContactItem>
+          <StyledIcon>
+            <MdEmail />
+          </StyledIcon>
+          <StyledContactLink href="mailto:louis.gevers@gmail.com">
+            louis.gevers@gmail.com
+          </StyledContactLink>
+        </ContactItem>
+        <ContactItem>
+          <StyledIcon>
+            <GrLinkedin />
+          </StyledIcon>
+          <StyledContactLink
+            href="https://www.linkedin.com/in/louisgevers"
+            target="_blank"
+          >
+            www.linkedin.com/in/louisgevers
+          </StyledContactLink>
+        </ContactItem>
+        <ContactItem>
+          <StyledIcon>
+            <GoMarkGithub />
+          </StyledIcon>
+          <StyledContactLink
+            href="https://www.github.com/louisgevers"
+            target="_blank"
+          >
+            www.github.com/louisgevers
+          </StyledContactLink>
+        </ContactItem>
+      </StyledContactList>
+    </ColoredSection>
+  </div>
 )
 
 export default Contact

@@ -32,6 +32,7 @@ const FullBackground = ({ className, children }) => {
 }
 
 const FullBackgroundImageSection = styled(FullBackground)`
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
