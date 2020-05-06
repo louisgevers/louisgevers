@@ -24,10 +24,10 @@ const About = () => (
         importance of communicating one's ideas effectively.
       </p>
       <p>
-        Computer science aside, I like to spend my free time travelling to
-        various places and enjoying board sports (winter or summer), or calmer
-        hobbies like reading novels and drawing. I am also fairly interested in
-        psychology and anthropology, subjects I love discuss around a beer.
+        Computer science aside, I like to spend my free time travelling and
+        enjoying board sports (winter or summer), or calmer hobbies like reading
+        novels and drawing. I am also fairly interested in psychology and
+        anthropology, subjects I love discuss around a beer.
       </p>
     </TextParagraph>
     <FlagIcons />

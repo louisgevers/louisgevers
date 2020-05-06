@@ -1,8 +1,16 @@
 [
   {
+    "title": "Exchange Programme in Singapore",
+    "institution": "National University Singapore",
+    "description": "Spent a semester abroad in Asia's top university (QS World University Rankings 2020) to study my minor in Communications and Psychology.",
+    "location": "Singapore",
+    "period": "Aug. 2019 - Dec. 2019",
+    "icon": "edu-nus.png"
+  },
+  {
     "title": "Honours Programme Delft",
     "institution": "Delft University of Technology",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "The Honours Programme Delft is an additional programme for students with higher than average performance. This program is designed for students to develop in-depth knowledge of highly technical subjects, work on a research project, and sharpen academic skills such as writing and debating.",
     "location": "Delft, Netherlands",
     "period": "Sept. 2018 - Exp. Jul. 2020",
     "icon": "edu-hpd.png"
@@ -10,9 +18,17 @@
   {
     "title": "BSc - Computer Science and Engineering",
     "institution": "Delft University of Technology",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Currently in my third and last year bachelors in Computer Science and Engineering in the Netherlands. Followed special Data Science track with courses in Computational Intelligence, Big Data Processing, and Data Mining. Current GPA of 8.7/10 (minimum requirement for \"cum laude\" predicate: 8/10).",
     "location": "Delft, Netherlands",
     "period": "Sept. 2017 - Exp. Jul. 2020",
     "icon": "edu-tudelft.png"
+  },
+  {
+    "title": "Secondary School - Science-Mathematics",
+    "institution": "Onze-Lieve-Vrouwinstituut",
+    "description": "Got my secondary school diploma in Belgium in Dutch. Followed Science and Mathematics track, with extra specialization in Mathematics (8 hours a week).",
+    "location": "Sint-Genesius-Rode, Belgium",
+    "period": "Sept. 2011 - Jun. 2017",
+    "icon": "edu-olv.png"
   }
 ]
