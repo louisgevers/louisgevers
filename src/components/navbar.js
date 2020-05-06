@@ -116,7 +116,7 @@ const NavBarLinks = () => (
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [topScroll, setTopScroll] = useState(
-    typeof window !== `undefined` ? window.pageYOffset === 0 : false
+    typeof window !== `undefined` ? window.pageYOffset === 0 : true
   )
   if (typeof window !== `undefined`) {
     window.addEventListener("scroll", () => {
