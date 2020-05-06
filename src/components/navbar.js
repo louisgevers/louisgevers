@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+
 import styled from "styled-components"
 
 const StyledNav = styled.nav`
@@ -115,7 +116,11 @@ const NavBarLinks = () => (
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [topScroll, setTopScroll] = useState(window.scrollY === 0)
-  window.addEventListener("scroll", () => setTopScroll(window.scrollY === 0))
+  window.addEventListener("scroll", () => {
+    if ((topScroll !== window.scrollY) === 0) {
+      setTopScroll(window.scrollY === 0)
+    }
+  })
 
   return (
     <StyledNav topScroll={topScroll}>
