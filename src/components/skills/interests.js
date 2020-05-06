@@ -75,6 +75,7 @@ const Interests = ({ items }) => (
   <ResponsiveGridList size={items.length}>
     {items.map(item => (
       <InterestEntry
+        key={item.title}
         iconName={item.materialIconName}
         title={item.title}
         description={item.description}

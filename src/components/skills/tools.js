@@ -26,37 +26,57 @@ const StyledToolEntryItem = styled.li`
   font-weight: 300;
 `
 
-const ToolEntry = ({ name, icon }) => {
+const StyledToolName = styled.span`
+  ::after {
+    content: "*";
+    display: ${props => (props.experienced ? "none" : "inline")};
+  }
+`
+
+const StyledAnnotation = styled.span`
+  font-size: 16px;
+  font-weight: 300;
+  text-align: start;
+  display: block;
+  margin-top: 40px;
+`
+
+const ToolEntry = ({ name, icon, experienced }) => {
   const IconSvg = styled(require(`../../assets/${icon}`))`
     height: 1em;
+    width: 1em;
     vertical-align: -0.2em;
     margin-right: 0.5em;
   `
   return (
     <StyledToolEntryItem>
       <IconSvg />
-      <span>{name}</span>
+      <StyledToolName experienced={experienced}>{name}</StyledToolName>
     </StyledToolEntryItem>
   )
 }
 
 const Tools = ({ items }) => (
-  <StyledToolList size={items.length}>
-    {items.map(item => (
-      <li key={item.title}>
-        <StyledToolTitle>{item.title}</StyledToolTitle>
-        <StyledEntriesList>
-          {item.items.map(toolItem => (
-            <ToolEntry
-              key={toolItem.name}
-              name={toolItem.name}
-              icon={toolItem.icon}
-            />
-          ))}
-        </StyledEntriesList>
-      </li>
-    ))}
-  </StyledToolList>
+  <div>
+    <StyledToolList size={items.length}>
+      {items.map(item => (
+        <li key={item.title}>
+          <StyledToolTitle>{item.title}</StyledToolTitle>
+          <StyledEntriesList>
+            {item.items.map(toolItem => (
+              <ToolEntry
+                key={toolItem.name}
+                name={toolItem.name}
+                icon={toolItem.icon}
+                experienced={toolItem.experienced}
+              />
+            ))}
+          </StyledEntriesList>
+        </li>
+      ))}
+    </StyledToolList>
+    <StyledAnnotation>* less experienced with</StyledAnnotation>
+  </div>
 )
 
 export default Tools

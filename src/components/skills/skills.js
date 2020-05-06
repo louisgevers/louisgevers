@@ -28,6 +28,7 @@ const Skills = () => {
           items {
             name
             icon
+            experienced
           }
         }
       }
