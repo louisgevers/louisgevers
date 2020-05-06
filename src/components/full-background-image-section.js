@@ -34,7 +34,7 @@ const FullBackground = ({ className, children }) => {
 const FullBackgroundImageSection = styled(FullBackground)`
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

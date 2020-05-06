@@ -3,6 +3,10 @@ import styled from "styled-components"
 export const StyledFullScreenWrapper = styled.div`
   width: 100%;
   height: 100vh;
+  min-height: 600px;
+  @media (min-width: 768px) {
+    min-height: 750px;
+  }
   overflow: hidden;
   padding: 0;
 `
