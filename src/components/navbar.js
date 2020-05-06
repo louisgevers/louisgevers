@@ -118,9 +118,9 @@ const NavBar = () => {
   const [topScroll, setTopScroll] = useState(
     typeof window !== `undefined` ? window.scrollY === 0 : false
   )
-  if (typeof window !== "undefined") {
+  if (typeof window !== `undefined`) {
     window.addEventListener("scroll", () => {
-      if ((topScroll !== window.scrollY) === 0) {
+      if (topScroll !== (window.scrollY === 0)) {
         setTopScroll(window.scrollY === 0)
       }
     })
