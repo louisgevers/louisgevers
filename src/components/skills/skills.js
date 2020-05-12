@@ -37,7 +37,7 @@ const Skills = () => {
   return (
     <div id="skills">
       <ColoredSection title="Skills" backgroundColor="#216869" color="#ffffff">
-        <CenteredStyledHeader>My areas of interest</CenteredStyledHeader>
+        <CenteredStyledHeader>What I have to offer</CenteredStyledHeader>
         <Interests items={data.interests.nodes} />
         <CenteredStyledHeader>Tools I use</CenteredStyledHeader>
         <Tools items={data.tools.nodes} />

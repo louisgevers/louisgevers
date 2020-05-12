@@ -45,8 +45,8 @@
       { "name": "D3.js", "icon": "d3.svg", "experienced": false },
       { "name": "Jest", "icon": "jest.svg", "experienced": false },
       {
-        "name": "Google Adsense",
-        "icon": "adsense.svg",
+        "name": "Google Admob",
+        "icon": "admob.svg",
         "experienced": false
       }
     ]

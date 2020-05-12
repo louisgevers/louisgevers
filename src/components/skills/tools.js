@@ -75,7 +75,7 @@ const Tools = ({ items }) => (
         </li>
       ))}
     </StyledToolList>
-    <StyledAnnotation>* less experienced with</StyledAnnotation>
+    <StyledAnnotation>* basic knowledge</StyledAnnotation>
   </div>
 )
 
