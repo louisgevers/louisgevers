@@ -46,5 +46,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: `Louis Gevers`,
+        short_name: `Louis Gevers`,
+        start_url: `/`,
+        icon: `src/images/icon.png`,
+      },
+    },
   ],
 }
