@@ -94,7 +94,9 @@ const Home = () => (
           Louis <b>Gevers</b>
         </SiteTitle>
         <Description>Computer Science Student</Description>
-        <DownloadButton>download my cv</DownloadButton>
+        <DownloadButton href="https://drive.google.com/uc?export=download&id=17QMiFjSWBcPBaktoVG8iN8zc6IOZjUnN">
+          download my cv
+        </DownloadButton>
       </Grid>
       <ExploreLink to="/#about" title="About">
         <span>or take a look</span>

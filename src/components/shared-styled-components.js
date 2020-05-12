@@ -11,7 +11,7 @@ export const StyledFullScreenWrapper = styled.div`
   padding: 0;
 `
 
-export const BigButton = styled.button`
+export const BigButton = styled.a`
   background: #84a98c;
   border: none;
   padding: 0.8em 1.2em;
@@ -21,6 +21,7 @@ export const BigButton = styled.button`
   font-weight: 300;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
   :hover {
     background: #abccb2;
   }
