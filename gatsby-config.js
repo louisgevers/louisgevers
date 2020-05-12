@@ -7,6 +7,13 @@ const path = require(`path`)
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Louis Gevers - Computer Science Student`,
+    description: `I am a third-year computer science bachelor student with interests in design and communications. Download my CV or take a look at my website.`,
+    author: `Louis Gevers`,
+    url: `https://www.louisgevers.com`,
+    image: "/meta.png",
+  },
   plugins: [
     {
       resolve: "gatsby-plugin-anchor-links",
@@ -55,5 +62,6 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }

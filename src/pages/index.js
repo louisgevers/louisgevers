@@ -7,9 +7,11 @@ import Resume from "../components/resume/resume"
 import Skills from "../components/skills/skills"
 import SectionBreak from "../components/section-break"
 import Contact from "../components/contact/contact"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
+    <SEO />
     <Home />
     <About />
     <Resume />
