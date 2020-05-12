@@ -84,10 +84,8 @@ const StyledLink = styled(AnchorLink)`
   color: white;
   font-size: 24px;
   font-weight: 700;
-  margin: 0.5em auto;
 
   @media (min-width: 768px) {
-    margin: 0 1em;
     font-size: 18px;
   }
 
@@ -96,20 +94,46 @@ const StyledLink = styled(AnchorLink)`
   }
 `
 
-const NavBarLinks = () => (
+const InvisibleButton = styled.button`
+  width: min-content;
+  height: min-content;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  margin: 0.5em auto;
+
+  :active {
+    outline: none;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 1em;
+  }
+`
+
+const NavBarLinks = ({ onLinkClick }) => (
   <>
-    <StyledLink to="/#about" title="about">
-      About
-    </StyledLink>
-    <StyledLink to="/#resume" title="resume">
-      Resume
-    </StyledLink>
-    <StyledLink to="/#skills" title="skills">
-      Skills
-    </StyledLink>
-    <StyledLink to="/#contact" title="contact">
-      Contact
-    </StyledLink>
+    <InvisibleButton onClick={onLinkClick}>
+      <StyledLink to="/#about" title="about">
+        About
+      </StyledLink>
+    </InvisibleButton>
+    <InvisibleButton onClick={onLinkClick}>
+      <StyledLink to="/#resume" title="resume">
+        Resume
+      </StyledLink>
+    </InvisibleButton>
+    <InvisibleButton onClick={onLinkClick}>
+      <StyledLink to="/#skills" title="skills">
+        Skills
+      </StyledLink>
+    </InvisibleButton>
+    <InvisibleButton onClick={onLinkClick}>
+      <StyledLink to="/#contact" title="contact">
+        Contact
+      </StyledLink>
+    </InvisibleButton>
   </>
 )
 
@@ -135,7 +159,7 @@ const NavBar = () => {
       </Toggle>
       {navbarOpen ? (
         <NavBox>
-          <NavBarLinks />
+          <NavBarLinks onLinkClick={() => setNavbarOpen(!navbarOpen)} />
         </NavBox>
       ) : (
         <NavBox open>
