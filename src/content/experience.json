@@ -1,13 +1,5 @@
 [
   {
-    "title": "Udrink.io Development",
-    "institution": "www.udrink.io",
-    "description": "I developed a web application using my free time during the Covid-19 lockdown period. Udrink.io is a website with realtime, multiplayer drinking games built with React.js, Pixi.js, and Socket.io. This project was a challenge to develop a full application from early prototyping to production in a short amount of time, and currently has over 150 players a day.",
-    "location": "Alsemberg, Belgium",
-    "period": "Mar. 2020 - Apr. 2020",
-    "icon": "exp-udrinkio.png"
-  },
-  {
     "title": "Solvay Business Game (selected)",
     "institution": "Solvay Brussels School of Economics & Management",
     "description": "Among 400 selected participants from over 1300 applicants worldwide in Europe's largest business game. However, due to the Covid-19 situation, the event was unfortunately canceled.",
@@ -24,27 +16,11 @@
     "icon": "exp-french.png"
   },
   {
-    "title": "Computer Vision Research Project",
-    "institution": "AIIR Innovations",
-    "description": "I am doing my research project for my Honours Programme at AIIR Innovations, a startup company that develops software that automates borescope inspections of jet engines. As Computer Vision was not offered in my bachelor's programme I used this opportunity to get exposed to the field.",
-    "location": "Amsterdam, Netherlands",
-    "period": "Nov. 2018 - Exp. Jul. 2020",
-    "icon": "exp-aiir.png"
-  },
-  {
     "title": "Teaching Assistant",
     "institution": "Delft University of Technology",
     "description": "Teaching Assistant for Object-Oriented Programming, Reasoning and Logic, Algorithms and Data Structures, Calculus, and OOP Project. I developed extensive knowledge in these subjects and acquired valuable teaching skills.",
     "location": "Delft, Netherlands",
     "period": "Sept. 2018 - Apr. 2019",
     "icon": "edu-tudelft.png"
-  },
-  {
-    "title": "DSA StartApp Development",
-    "institution": "Delftsche Studenten Aeroclub",
-    "description": "I developed an Android app for a flying student association I was a former member of. The app is responsible for keeping track of flights, data validation, syncing with the server, having a local backup for offline capabilities, providing summaries to the board through email, all provided within an intuitive user interface for the everyday user to use.",
-    "location": "Delft, Netherlands",
-    "period": "Jan. 2018 - Dec. 2018",
-    "icon": "exp-dsa.png"
   }
 ]
