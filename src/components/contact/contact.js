@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-// import { GoMarkGithub } from "react-icons/go"
+import { GoMarkGithub } from "react-icons/go"
 import { GrLinkedin } from "react-icons/gr"
 import { MdEmail } from "react-icons/md"
 
@@ -58,7 +58,7 @@ const Contact = () => (
             www.linkedin.com/in/louisgevers
           </StyledContactLink>
         </ContactItem>
-        {/* <ContactItem>
+        <ContactItem>
           <StyledIcon>
             <GoMarkGithub />
           </StyledIcon>
@@ -68,7 +68,7 @@ const Contact = () => (
           >
             www.github.com/louisgevers
           </StyledContactLink>
-        </ContactItem> */}
+        </ContactItem>
       </StyledContactList>
     </ColoredSection>
   </div>
