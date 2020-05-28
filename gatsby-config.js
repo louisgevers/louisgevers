@@ -9,7 +9,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Louis Gevers - Computer Science Student`,
-    description: `I am a third-year computer science bachelor student with interests in design and communications. Download my CV or take a look at my website.`,
+    description: `Passionate junior software developer skilled in Java, Python, and ReactJS with hunger for learning. Download my CV or take a look at my website.`,
     author: `Louis Gevers`,
     url: `https://www.louisgevers.com`,
     image: "/meta.png",
