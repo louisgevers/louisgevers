@@ -1,53 +1,43 @@
 [
   {
+    "title": "Web",
+    "items": [
+      { "name": "HTML5", "icon": "html.svg" },
+      { "name": "CSS3", "icon": "css.svg" },
+      {
+        "name": "JavaScript (ES6/7)",
+        "icon": "javascript.svg",
+        "experienced": true
+      },
+      { "name": "Node.js", "icon": "nodejs.svg" },
+      { "name": "React.js", "icon": "reactjs.svg" }
+    ]
+  },
+  {
     "title": "Programming",
     "items": [
-      { "name": "Java", "icon": "java.svg", "experienced": true },
-      { "name": "Python", "icon": "python.svg", "experienced": true },
+      { "name": "Java", "icon": "java.svg" },
+      { "name": "Python", "icon": "python.svg" },
       {
         "name": "Android Development",
         "icon": "android.svg",
         "experienced": true
       },
+      { "name": "Maven", "icon": "maven.svg" },
       {
         "name": "Version Control (GIT)",
         "icon": "git.svg",
         "experienced": true
       },
-      { "name": "Maven", "icon": "maven.svg", "experienced": true },
-
-      { "name": "Gradle", "icon": "gradle.svg", "experienced": false },
-      { "name": "Kotlin", "icon": "kotlin.svg", "experienced": false },
-      { "name": "Scala", "icon": "scala.svg", "experienced": false },
-      { "name": "C++", "icon": "cpp.svg", "experienced": false }
-    ]
-  },
-  {
-    "title": "Web",
-    "items": [
-      { "name": "HTML5", "icon": "html.svg", "experienced": true },
-      { "name": "CSS3", "icon": "css.svg", "experienced": true },
-      { "name": "JavaScript", "icon": "javascript.svg", "experienced": true },
-      { "name": "Node.js", "icon": "nodejs.svg", "experienced": true },
-      { "name": "Socket.io", "icon": "socketio.svg", "experienced": true },
-      { "name": "SQL", "icon": "sql.svg", "experienced": true },
-      { "name": "React.js", "icon": "reactjs.svg", "experienced": true },
-      { "name": "Gatsby", "icon": "gatsby.svg", "experienced": true },
-      { "name": "Storybook", "icon": "storybook.svg", "experienced": true },
-      { "name": "Pixi.js", "icon": "pixi.svg", "experienced": true },
       {
-        "name": "Google Analytics",
-        "icon": "analytics.svg",
+        "name": "CI/CD",
+        "icon": "cicd.svg",
         "experienced": true
       },
-
-      { "name": "Vue.js", "icon": "vue.svg", "experienced": false },
-      { "name": "D3.js", "icon": "d3.svg", "experienced": false },
-      { "name": "Jest", "icon": "jest.svg", "experienced": false },
       {
-        "name": "Google Admob",
-        "icon": "admob.svg",
-        "experienced": false
+        "name": "Agile and Scrum",
+        "icon": "agile.svg",
+        "experienced": true
       }
     ]
   },
@@ -60,11 +50,6 @@
         "experienced": true
       },
       {
-        "name": "Adobe Flash",
-        "icon": "flash.svg",
-        "experienced": true
-      },
-      {
         "name": "LaTeX",
         "icon": "latex.svg",
         "experienced": true
@@ -73,11 +58,6 @@
         "name": "Justinmind Prototyper",
         "icon": "justinmind.svg",
         "experienced": true
-      },
-      {
-        "name": "Blender",
-        "icon": "blender.svg",
-        "experienced": false
       }
     ]
   }

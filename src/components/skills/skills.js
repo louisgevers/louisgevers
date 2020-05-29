@@ -28,7 +28,6 @@ const Skills = () => {
           items {
             name
             icon
-            experienced
           }
         }
       }
@@ -39,7 +38,7 @@ const Skills = () => {
       <ColoredSection title="Skills" backgroundColor="#216869" color="#ffffff">
         <CenteredStyledHeader>What I have to offer</CenteredStyledHeader>
         <Interests items={data.interests.nodes} />
-        <CenteredStyledHeader>Tools I use</CenteredStyledHeader>
+        <CenteredStyledHeader>My main tools</CenteredStyledHeader>
         <Tools items={data.tools.nodes} />
       </ColoredSection>
     </div>

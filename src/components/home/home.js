@@ -95,7 +95,7 @@ const Home = () => (
         </SiteTitle>
         <Description>
           Passionate junior software developer skilled in Java, Python, and
-          ReactJS with hunger for learning.
+          ReactJS with hunger for learning
         </Description>
         <DownloadButton href="https://drive.google.com/uc?export=download&id=17QMiFjSWBcPBaktoVG8iN8zc6IOZjUnN">
           download my cv

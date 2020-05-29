@@ -26,22 +26,9 @@ const StyledToolEntryItem = styled.li`
   font-weight: 300;
 `
 
-const StyledToolName = styled.span`
-  ::after {
-    content: "*";
-    display: ${props => (props.experienced ? "none" : "inline")};
-  }
-`
+const StyledToolName = styled.span``
 
-const StyledAnnotation = styled.span`
-  font-size: 16px;
-  font-weight: 300;
-  text-align: start;
-  display: block;
-  margin-top: 40px;
-`
-
-const ToolEntry = ({ name, icon, experienced }) => {
+const ToolEntry = ({ name, icon }) => {
   const IconSvg = styled(require(`../../assets/${icon}`))`
     height: 1em;
     width: 1em;
@@ -51,7 +38,7 @@ const ToolEntry = ({ name, icon, experienced }) => {
   return (
     <StyledToolEntryItem>
       <IconSvg />
-      <StyledToolName experienced={experienced}>{name}</StyledToolName>
+      <StyledToolName>{name}</StyledToolName>
     </StyledToolEntryItem>
   )
 }
@@ -68,14 +55,12 @@ const Tools = ({ items }) => (
                 key={toolItem.name}
                 name={toolItem.name}
                 icon={toolItem.icon}
-                experienced={toolItem.experienced}
               />
             ))}
           </StyledEntriesList>
         </li>
       ))}
     </StyledToolList>
-    <StyledAnnotation>* basic knowledge</StyledAnnotation>
   </div>
 )
 
